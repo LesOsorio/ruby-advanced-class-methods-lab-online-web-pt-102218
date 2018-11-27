@@ -40,4 +40,7 @@ class Song
       self.find_by_name(name)
     end
   end
+
+  def self.alphabetical
+    self.sort_by{|a, b| a <=> b}
 end
